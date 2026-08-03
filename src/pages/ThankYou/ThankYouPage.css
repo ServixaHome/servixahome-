@@ -1,0 +1,134 @@
+/* THANK YOU PAGE STYLES */
+.thank-you-page {
+  background-color: var(--color-gray-light);
+  min-height: 80vh;
+}
+
+.thank-you-card {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  border-top: 5px solid var(--color-whatsapp);
+}
+
+.success-icon-badge {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #DCFCE7;
+  color: var(--color-whatsapp-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+}
+
+.thank-you-title {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: var(--color-primary);
+  margin-bottom: 0.85rem;
+}
+
+.thank-you-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-dark-muted);
+  line-height: 1.6;
+  max-width: 660px;
+  margin: 0 auto 2rem auto;
+}
+
+.booking-summary-box {
+  background-color: var(--color-gray-light);
+  border: 1px solid var(--color-gray-border);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.booking-summary-box h3 {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #E2E8F0;
+  padding-bottom: 0.5rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  color: var(--color-dark);
+}
+
+.full-col {
+  grid-column: 1 / -1;
+}
+
+.thank-you-policy-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-accent-light);
+  color: var(--color-primary-dark);
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 2.25rem;
+}
+
+.thank-you-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.popular-services-block {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.popular-services-block h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+}
+
+.popular-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.popular-service-item {
+  padding: 1.1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  color: var(--color-primary);
+  background-color: #FFFFFF;
+}
+
+@media (max-width: 640px) {
+  .thank-you-card {
+    padding: 2rem 1.25rem;
+  }
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+  .thank-you-actions {
+    flex-direction: column;
+  }
+  .thank-you-actions .btn {
+    width: 100%;
+  }
+  .popular-services-grid {
+    grid-template-columns: 1fr;
+  }
+}

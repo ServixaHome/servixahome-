@@ -1,0 +1,58 @@
+/* 404 NOT FOUND PAGE STYLES */
+.not-found-page {
+  background-color: var(--color-gray-light);
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+}
+
+.not-found-card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3.5rem 2.5rem;
+  border-top: 5px solid var(--color-call);
+}
+
+.error-code-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-call);
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.error-icon {
+  color: var(--color-call);
+}
+
+.not-found-card h1 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: var(--color-primary);
+  margin-bottom: 0.85rem;
+}
+
+.not-found-card p {
+  font-size: 1.05rem;
+  color: var(--color-dark-muted);
+  line-height: 1.6;
+  margin-bottom: 2.25rem;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .not-found-actions {
+    flex-direction: column;
+  }
+  .not-found-actions .btn {
+    width: 100%;
+  }
+}

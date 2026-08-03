@@ -1,0 +1,68 @@
+/* FLOATING BUTTONS WIDGETS */
+.floating-widgets-wrapper {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.floating-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  transition: var(--transition-bounce);
+  text-decoration: none;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+}
+
+.float-call {
+  background-color: var(--color-call);
+}
+
+.float-whatsapp {
+  background-color: var(--color-whatsapp);
+}
+
+.float-top {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-accent);
+}
+
+.floating-btn-tooltip {
+  position: absolute;
+  right: 65px;
+  background-color: var(--color-dark);
+  color: #FFFFFF;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-fast);
+  pointer-events: none;
+}
+
+.floating-btn:hover .floating-btn-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .desktop-only-widgets {
+    display: none;
+  }
+}

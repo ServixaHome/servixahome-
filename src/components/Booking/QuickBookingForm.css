@@ -1,0 +1,155 @@
+/* QUICK BOOKING SECTION */
+.quick-booking-section {
+  position: relative;
+  margin-top: -3.5rem;
+  z-index: 20;
+  padding-bottom: 3.5rem;
+}
+
+.booking-card {
+  padding: 2.25rem 2.5rem;
+  background-color: #FFFFFF;
+  border-top: 5px solid var(--color-accent);
+  box-shadow: var(--shadow-xl);
+}
+
+.booking-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-primary);
+  font-weight: 800;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: var(--color-accent-light);
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.5rem;
+}
+
+.booking-header h2 {
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.visit-badge-text {
+  font-size: 0.95rem;
+  color: var(--color-dark-muted);
+}
+
+.visit-badge-text strong {
+  color: var(--color-accent-hover);
+}
+
+/* ERROR ALERT */
+.form-error-alert {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #FEF2F2;
+  border: 1px solid #FCA5A5;
+  color: #991B1B;
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* FORM GRID */
+.quick-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--color-dark);
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1.5px solid var(--color-gray-border);
+  border-radius: var(--radius-md);
+  background-color: #F8FAFC;
+  color: var(--color-dark);
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+  border-color: var(--color-primary);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(15, 61, 135, 0.12);
+}
+
+/* ACTIONS ROW */
+.form-actions-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.btn-submit-lg {
+  padding: 1rem;
+  font-size: 1.05rem;
+  width: 100%;
+}
+
+.form-guarantee-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-dark-muted);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.guarantee-icon {
+  color: var(--color-whatsapp);
+}
+
+@media (max-width: 768px) {
+  .quick-booking-section {
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+  .booking-card {
+    padding: 1.5rem 1.25rem;
+  }
+  .quick-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-actions-row {
+    grid-template-columns: 1fr;
+  }
+}

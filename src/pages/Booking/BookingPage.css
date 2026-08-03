@@ -1,0 +1,91 @@
+/* BOOKING PAGE STYLES */
+.booking-page {
+  background-color: var(--color-gray-light);
+}
+
+.booking-hero-banner {
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  color: #FFFFFF;
+  padding: 3rem 0 5rem 0;
+  text-align: center;
+}
+
+.booking-banner-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.banner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(234, 161, 19, 0.2);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.booking-banner-content h1 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: #FFFFFF;
+  margin-bottom: 0.85rem;
+}
+
+.booking-banner-content p {
+  font-size: 1.05rem;
+  color: #E2E8F0;
+  line-height: 1.6;
+}
+
+.booking-form-wrapper {
+  margin-top: -3.5rem;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.direct-helpline-card {
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-left: 5px solid var(--color-accent);
+}
+
+.helpline-text h3 {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.helpline-text p {
+  color: var(--color-dark-muted);
+  font-size: 0.95rem;
+}
+
+.helpline-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 860px) {
+  .direct-helpline-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .helpline-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+  .helpline-buttons .btn {
+    width: 100%;
+  }
+}

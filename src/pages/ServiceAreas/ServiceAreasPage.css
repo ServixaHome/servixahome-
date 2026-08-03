@@ -1,0 +1,23 @@
+/* SERVICE AREAS PAGE STYLES */
+.service-areas-page {
+  background-color: var(--color-gray-light);
+}
+
+.areas-hero-banner {
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  color: #FFFFFF;
+  padding: 3.5rem 0;
+}
+
+.areas-hero-banner h1 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: #FFFFFF;
+  margin-bottom: 0.85rem;
+}
+
+.areas-hero-banner p {
+  font-size: 1.05rem;
+  color: #E2E8F0;
+  max-width: 680px;
+  margin: 0 auto;
+}

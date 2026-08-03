@@ -1,0 +1,61 @@
+/* STICKY MOBILE ACTION BAR */
+.sticky-mobile-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #FFFFFF;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid var(--color-gray-border);
+  padding: 0.5rem 0.75rem;
+  gap: 0.5rem;
+}
+
+.mobile-bar-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.7rem 0.5rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.15s ease;
+  line-height: 1;
+}
+
+.mobile-bar-btn:active {
+  transform: scale(0.96);
+}
+
+.btn-call-mobile {
+  background-color: var(--color-call);
+  color: #FFFFFF;
+}
+
+.btn-whatsapp-mobile {
+  background-color: var(--color-whatsapp);
+  color: #FFFFFF;
+}
+
+.btn-book-mobile {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+/* VISIBLE ONLY ON MOBILE & SMALL TABLETS */
+@media (max-width: 768px) {
+  .sticky-mobile-bar {
+    display: flex;
+  }
+
+  /* Add padding to body on mobile so footer doesn't get covered by sticky bar */
+  body {
+    padding-bottom: 60px;
+  }
+}

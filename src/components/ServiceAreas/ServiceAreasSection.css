@@ -1,0 +1,100 @@
+/* SERVICE AREAS SECTION */
+.service-areas-section {
+  background-color: var(--color-gray-light);
+}
+
+.locations-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.location-card {
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.location-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.loc-icon {
+  color: var(--color-accent);
+}
+
+.location-card-header h3 {
+  font-size: 1.15rem;
+  color: var(--color-primary);
+}
+
+.loc-pincode {
+  font-size: 0.8rem;
+  color: var(--color-dark-muted);
+  margin-bottom: 0.65rem;
+  font-weight: 600;
+}
+
+.loc-highlight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: var(--color-accent-light);
+  color: var(--color-primary-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+}
+
+.loc-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.location-card:hover .loc-card-footer {
+  color: var(--color-accent-hover);
+}
+
+/* EXPANSION BANNER */
+.location-expansion-banner {
+  padding: 1.75rem 2rem;
+  background-color: var(--color-white);
+  border-left: 5px solid var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.expansion-text h3 {
+  color: var(--color-primary);
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.expansion-text p {
+  color: var(--color-dark-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .location-expansion-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .location-expansion-banner .btn {
+    width: 100%;
+  }
+}

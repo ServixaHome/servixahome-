@@ -1,0 +1,5 @@
+/* AC REPAIR PAGE STYLES (INHERITS BASE DETAIL STYLES FROM WASHING MACHINE PAGE) */
+.ac-spec-card {
+  padding: 1.5rem;
+  border-left: 4px solid var(--color-accent);
+}
