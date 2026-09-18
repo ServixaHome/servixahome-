@@ -11,7 +11,7 @@ export const submitBookingForm = async (formData) => {
     data.append("to_email", BUSINESS_INFO.email);
     data.append("name", formData.name || "");
     data.append("phone", formData.phone || "");
-    data.append("email", formData.email || "Not Provided");
+    data.append("email", formData.email || "yasmisa66@gmail.com");
     data.append("service", formData.service || "Appliance Repair");
     data.append("preferred_date", formData.date || "As soon as possible");
     data.append("preferred_time", formData.time || "Flexible");
